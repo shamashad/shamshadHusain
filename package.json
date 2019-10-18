@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/shamashad/shamshadHusain",
   "name": "cart-application",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "",
     "eject": ""
   },
@@ -44,6 +47,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "babel-loader": "^8.0.6",
+    "gh-pages": "^2.1.1",
     "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.2"
