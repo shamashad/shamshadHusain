@@ -1,5 +1,5 @@
 {
-  "homepage": "https://shamashad.github.io/shamshadHusain",
+  "homepage": "https://shamashad.github.io/shamshadHusain/",
   "name": "cart-application",
   "version": "0.1.0",
   "private": true,
@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "test": "",
     "eject": ""
   },

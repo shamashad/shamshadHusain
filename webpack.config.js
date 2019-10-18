@@ -1,10 +1,17 @@
 const path = require('path');
-const HWP = require('html-webpack-plugin');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+
+const htmlWebpackPlugin = new HtmlWebPackPlugin({
+  template: "./src/index.html",
+  filename: "./index.html"
+});
+
+
 module.exports = {
   entry: path.join(__dirname, '/src/index.js'),
     output: {
         filename: 'build.js',
-        path: path.join(__dirname, '/dist')},
+        path: path.join(__dirname, '/build')},
     module:{
       rules: [
         {
@@ -38,10 +45,6 @@ module.exports = {
     resolve: {
       extensions: ['.js', '.jsx']
     },
-    plugins:[
-        new HWP(
-           {template: path.join(__dirname,'/src/index.html')}
-        )
-    ]
+    plugins:[htmlWebpackPlugin]
   }
 
