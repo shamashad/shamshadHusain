@@ -39,7 +39,8 @@ module.exports = {
               } 
             }
           ]
-        }
+        },
+        { test: /\.png$/, loader: "url-loader?mimetype=image/png" }
       ]
     },
     resolve: {

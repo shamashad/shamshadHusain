@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import placeholder from '../../../src/Style/resources/images/placeholder.png';
 const Product = ({ name, discount, price, img_url, priceWithDiscount, id, qty, addToCart, currentProductData, cartData, updateProductQuantity }) => {
   /*@Add or update product quantuty in cart*/
   const addProductToCartHandler = (id) => {
@@ -34,7 +35,7 @@ const Product = ({ name, discount, price, img_url, priceWithDiscount, id, qty, a
           <span className="offer"> off</span>
         </div>
         <div className="bookImage">
-          <img href={img_url} alt="Book cover not available" align="middle" />
+          <img src={placeholder} alt="Book cover not available" align="middle" />
         </div>
       </div>
       <div className="product-info">

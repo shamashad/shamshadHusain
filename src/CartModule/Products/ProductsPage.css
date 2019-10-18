@@ -100,9 +100,9 @@
 .product-img-container img {
   display: inline-block;
   position: relative;
-  left: 98%;
-  top: 44%;
-  transform: translate(-93%, 0);
+  background-size: contain;
+  width: 150px;
+  height: 150px;
 }
 .product-info {
   display: block;
